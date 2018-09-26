@@ -1,37 +1,33 @@
 {
-"schema" : "{
-\"namespace\" : \"cigo\",
-\"name\" : \"ratings\",
-\"type\": \"record\",
-\"doc\" : \"Sample schema\",
-   \"fields\" :
+"schema":"{
+    \"type\":\"record\",
+    \"name\":\"ratings\",
+    \"fields\":
         [
             {
-             \"name\" : \"id\",
-             \"type\" : \"long\"
+                \"name\":\"id\",
+                \"type\":\"long\"
             },
             {
-                \"name\" : \"modified\",
-             \"type\" :
-                        {
-                            \"type\" : \"long\",
-                            \"connect.version\" : 1,
-                            \"connect.name\" : \"org.apache.kafka.connect.data.Timestamp\",
-                            \"logicalType\" : \"timestamp-millis\"
-                        }
+                \"name\":\"modified\",
+                \"type\":{\"type\":\"long\",\"connect.version\":1,\"connect.name\":\"org.apache.kafka.connect.data.Timestamp\",\"logicalType\":\"timestamp-millis\"}
             },
             {
-                \"name\" : \"user_id\",
-             \"type\" : \"int\"
+                \"name\":\"user_id\",
+                \"type\":[\"null\",\"int\"],
+                \"default\":null
             },
             {
-                \"name\" : \"activity_id\",
-             \"type\" : \"int\"
+                \"name\":\"activity_id\",
+                \"type\":[\"null\",\"int\"],
+                \"default\":null
             },
             {
-                \"name\" : \"rating\",
-             \"type\" : \"double\"
-             }
-        ]
-  }"
+                \"name\":\"rating\",
+                \"type\":[\"null\",\"double\"],
+                \"default\":null
+            }
+        ],
+    \"connect.name\":\"ratings\"
+ }"
 }
