@@ -20,7 +20,6 @@
                 \"name\":\"rating\",
                 \"type\":\"double\"
             }
-        ],
-    \"connect.name\":\"ratings\"
+        ]
  }"
 }
