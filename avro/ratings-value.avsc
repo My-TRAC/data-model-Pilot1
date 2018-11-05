@@ -10,18 +10,15 @@
             },
             {
                 \"name\":\"user_id\",
-                \"type\":[\"null\",\"int\"],
-                \"default\":null
+                \"type\":\"int\"
             },
             {
                 \"name\":\"activity_id\",
-                \"type\":[\"null\",\"int\"],
-                \"default\":null
+                \"type\":\"int\"
             },
             {
                 \"name\":\"rating\",
-                \"type\":[\"null\",\"double\"],
-                \"default\":null
+                \"type\":\"double\"
             }
         ],
     \"connect.name\":\"ratings\"
