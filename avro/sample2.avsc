@@ -1,0 +1,14 @@
+{ 
+  "schema" : "{
+    \"namespace\" : \"cigo\",
+    \"name\" : \"sample\", 
+    \"type\": \"record\", 
+    \"doc\" : \"Sample schema\",
+    \"fields\" : 
+      {
+        \"name\" : \"field1\", 
+        \"type\" : \"string\",
+        \"doc\" : \"Description of field 1\"
+      }
+  }"
+}
