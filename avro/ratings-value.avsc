@@ -1,25 +1,3 @@
 {
-"schema":"{
-    \"type\":\"record\",
-    \"name\":\"ratings\",
-    \"fields\":
-        [
-            {
-                \"name\":\"id\",
-                \"type\":\"long\"
-            },
-            {
-                \"name\":\"user_id\",
-                \"type\":\"int\"
-            },
-            {
-                \"name\":\"activity_id\",
-                \"type\":\"int\"
-            },
-            {
-                \"name\":\"rating\",
-                \"type\":\"double\"
-            }
-        ]
- }"
+"schema":"{\"type\":\"record\",\"name\":\"ratings\",\"fields\":[{\"name\":\"id\",\"type\":[\"null\",\"long\"],\"default\":null},{\"name\":\"user_id\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"activity_id\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"rating\",\"type\":[\"null\",\"double\"],\"default\":null}],\"connect.name\":\"ratings\"}"
 }
