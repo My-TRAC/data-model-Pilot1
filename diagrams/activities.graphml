@@ -130,8 +130,8 @@ lattitude : Float
 longitude : Float
 descriptors : String
 activityType : String
-timeStart : DataTime
-timeEnd : DateTime</y:AttributeLabel>
+timeStart : Timestamp
+timeEnd : Timestamp</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>
