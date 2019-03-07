@@ -16,7 +16,6 @@
     <data key="d0"/>
     <node id="n0">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="148.0" width="177.0" x="836.0" y="503.0"/>
@@ -44,7 +43,7 @@
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : UUID
+            <y:AttributeLabel>id : Long
 type : String
 name : String
 lattitude : Float
@@ -58,7 +57,6 @@ uiccode : Int</y:AttributeLabel>
     </node>
     <node id="n1">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="137.0" width="202.0" x="823.5" y="865.0"/>
@@ -72,7 +70,7 @@ uiccode : Int</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : UUID
+            <y:AttributeLabel>id : Long
 type : String
 name : String
 lattitude : Float
@@ -85,7 +83,6 @@ descriptors : String</y:AttributeLabel>
     </node>
     <node id="n2">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="148.0" width="195.0" x="1372.0" y="503.0"/>
@@ -99,7 +96,7 @@ descriptors : String</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : UUID
+            <y:AttributeLabel>id : Long
 type : String
 name : String
 lattitude : Float
@@ -113,7 +110,6 @@ amenity : String</y:AttributeLabel>
     </node>
     <node id="n3">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="175.0" width="236.0" x="1351.5" y="846.0"/>
@@ -127,7 +123,7 @@ amenity : String</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : UUID
+            <y:AttributeLabel>id : Long
 type : String
 name : String
 lattitude : Float
@@ -143,7 +139,6 @@ timeEnd : DateTime</y:AttributeLabel>
     </node>
     <node id="n4">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="75.0" width="202.0" x="823.5" y="718.0"/>
@@ -157,8 +152,8 @@ timeEnd : DateTime</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>stationId : UUID
-facilityId : UUID</y:AttributeLabel>
+            <y:AttributeLabel>stationId : Long
+facilityId : Long</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>
@@ -166,7 +161,6 @@ facilityId : UUID</y:AttributeLabel>
     </node>
     <node id="n5">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="75.0" width="202.0" x="1102.0" y="539.5"/>
@@ -180,8 +174,8 @@ facilityId : UUID</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>stationId : UUID
-pointOfInterestId : UUID</y:AttributeLabel>
+            <y:AttributeLabel>stationId : Long
+pointOfInterestId : Long</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>
@@ -189,7 +183,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </node>
     <node id="n6">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="75.0" width="202.0" x="1368.5" y="718.0"/>
@@ -203,8 +196,8 @@ pointOfInterestId : UUID</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>activityId : UUID
-pointOfInterestId : UUID</y:AttributeLabel>
+            <y:AttributeLabel>activityId : Long
+pointOfInterestId : Long</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>
@@ -212,7 +205,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </node>
     <node id="n7">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="28.0" width="251.0" x="437.0" y="460.0"/>
@@ -234,7 +226,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </node>
     <node id="n8">
       <data key="d4"/>
-      <data key="d5"/>
       <data key="d6">
         <y:UMLClassNode>
           <y:Geometry height="28.0" width="251.0" x="437.0" y="496.0"/>
@@ -256,7 +247,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </node>
     <edge id="e0" source="n4" target="n0">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -268,7 +258,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </edge>
     <edge id="e1" source="n4" target="n1">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -280,7 +269,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </edge>
     <edge id="e2" source="n5" target="n0">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -292,7 +280,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </edge>
     <edge id="e3" source="n5" target="n2">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -304,7 +291,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </edge>
     <edge id="e4" source="n6" target="n2">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -316,7 +302,6 @@ pointOfInterestId : UUID</y:AttributeLabel>
     </edge>
     <edge id="e5" source="n6" target="n3">
       <data key="d8"/>
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
