@@ -55,22 +55,4 @@ public class SQLQueryBuilder {
         }
         return null;
     }
-
-
-    public static String insert(String tableName,String header, String[] record)
-    {
-        StringBuilder sb = new StringBuilder("INSERT INTO "+tableName+header);
-        sb.append("VALUES (");
-        boolean first=true;
-        for(String value : record)
-        {
-            if(!first) sb.append(", ");
-            sb.append("'"+value+"'");
-            first=false;
-        }
-        sb.append(")");
-        return sb.toString();
-    }
-
-
 }

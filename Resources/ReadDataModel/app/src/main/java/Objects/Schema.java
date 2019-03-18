@@ -24,15 +24,15 @@ public class Schema {
         for(org.apache.avro.Schema.Field f: parse.getFields())
         {
             String name = f.name();
-            System.out.println(name);
+            //System.out.println(name);
             org.apache.avro.Schema avro_schema = f.schema();
             String type="";
             if(avro_schema.getType()==org.apache.avro.Schema.Type.UNION) {
                 for (org.apache.avro.Schema subschema : avro_schema.getTypes()) {
                     type = subschema.getName();
-                    if (!type.equals("null")) {
+                    /*if (!type.equals("null")) {
                         System.out.println("    " + type);
-                    }
+                    }*/
                 }
             }
             else
