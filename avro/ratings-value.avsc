@@ -1,3 +1,35 @@
 {
-"schema":"{\"type\":\"record\",\"name\":\"ratings\",\"fields\":[{\"name\":\"id\",\"type\":\"long\"},{\"name\":\"user_id\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"activity_id\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"rating\",\"type\":[\"null\",\"double\"],\"default\":null}],\"connect.name\":\"ratings\"}"
+  "type": "record",
+  "name": "ratings",
+  "fields": [
+    {
+      "name": "id",
+      "type": "long"
+    },
+    {
+      "name": "user_id",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "activity_id",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "rating",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "ratings"
 }

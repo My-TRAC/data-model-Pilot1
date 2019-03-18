@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "activityrelpointofinterest",
+  "fields": [
+    {
+      "name": "activityId",
+      "type": "long"
+    },
+    {
+      "name": "pointofinterestid",
+      "type": "long"
+    }
+  ],
+  "connect.name": "activityrelpointofinterest"
+}
