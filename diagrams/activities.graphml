@@ -43,7 +43,7 @@
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : Long
+            <y:AttributeLabel>id : String
 type : String
 name : String
 lattitude : Float
@@ -70,7 +70,7 @@ uiccode : Int</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : Long
+            <y:AttributeLabel>id : String
 type : String
 name : String
 lattitude : Float
@@ -96,7 +96,7 @@ descriptors : String</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : Long
+            <y:AttributeLabel>id : String
 type : String
 name : String
 lattitude : Float
@@ -123,7 +123,7 @@ amenity : String</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>id : Long
+            <y:AttributeLabel>id : String
 type : String
 name : String
 lattitude : Float
@@ -152,8 +152,8 @@ timeEnd : Timestamp</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>stationId : Long
-facilityId : Long</y:AttributeLabel>
+            <y:AttributeLabel>stationId : String
+facilityId : String</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>
@@ -174,8 +174,8 @@ facilityId : Long</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>stationId : Long
-pointOfInterestId : Long</y:AttributeLabel>
+            <y:AttributeLabel>stationId : String
+pointOfInterestId : String</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>
@@ -196,8 +196,8 @@ pointOfInterestId : Long</y:AttributeLabel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:UML clipContent="true" constraint="" hasDetailsColor="false" omitDetails="false" stereotype="" use3DEffect="true">
-            <y:AttributeLabel>activityId : Long
-pointOfInterestId : Long</y:AttributeLabel>
+            <y:AttributeLabel>activityId : String
+pointOfInterestId : String</y:AttributeLabel>
             <y:MethodLabel/>
           </y:UML>
         </y:UMLClassNode>

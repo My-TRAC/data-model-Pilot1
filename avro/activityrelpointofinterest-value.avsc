@@ -4,11 +4,11 @@
   "fields": [
     {
       "name": "activityId",
-      "type": "long"
+      "type": "string"
     },
     {
       "name": "pointofinterestid",
-      "type": "long"
+      "type": "string"
     }
   ],
   "connect.name": "activityrelpointofinterest"
