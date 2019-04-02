@@ -1,13 +1,25 @@
 {
   "type": "record",
-  "name": "station",
+  "name": "agency",
   "fields": [
     {
-      "name": "id",
+      "name": "agency_id",
       "type": "string"
     },
     {
-      "name": "code",
+      "name": "agency_name",
+      "type": "string",
+    },
+    {
+      "name": "agency_url",
+      "type": "string",
+    },
+    {
+      "name": "agency_timezone",
+      "type": "string",
+    },
+    {
+      "name": "agency_lang",
       "type": [
         "null",
         "string"
@@ -15,7 +27,7 @@
       "default": null
     },
     {
-      "name": "name",
+      "name": "agency_phone",
       "type": [
         "null",
         "string"
@@ -23,23 +35,7 @@
       "default": null
     },
     {
-      "name": "lattitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "longitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "zoneId",
+      "name": "agency_fare_url",
       "type": [
         "null",
         "string"
@@ -47,15 +43,7 @@
       "default": null
     },
     {
-      "name": "locationType",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "parentStation",
+      "name": "agency_email",
       "type": [
         "null",
         "string"
@@ -71,5 +59,5 @@
       "default": null
     }
   ],
-  "connect.name": "station"
+  "connect.name": "agency"
 }

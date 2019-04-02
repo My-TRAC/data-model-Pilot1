@@ -1,13 +1,13 @@
 {
   "type": "record",
-  "name": "station",
+  "name": "route",
   "fields": [
     {
-      "name": "id",
+      "name": "route_id",
       "type": "string"
     },
     {
-      "name": "code",
+      "name": "agency_id",
       "type": [
         "null",
         "string"
@@ -15,7 +15,7 @@
       "default": null
     },
     {
-      "name": "name",
+      "name": "route_short_name",
       "type": [
         "null",
         "string"
@@ -23,23 +23,7 @@
       "default": null
     },
     {
-      "name": "lattitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "longitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "zoneId",
+      "name": "route_long_name",
       "type": [
         "null",
         "string"
@@ -47,18 +31,46 @@
       "default": null
     },
     {
-      "name": "locationType",
+      "name": "route_desc",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "route_type",
+      "type": "int"
+    },
+    {
+      "name": "route_url",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "route_color",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "route_text_color",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "route_sort_order",
       "type": [
         "null",
         "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "parentStation",
-      "type": [
-        "null",
-        "string"
       ],
       "default": null
     },
@@ -71,5 +83,5 @@
       "default": null
     }
   ],
-  "connect.name": "station"
+  "connect.name": "route"
 }

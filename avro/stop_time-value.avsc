@@ -1,13 +1,13 @@
 {
   "type": "record",
-  "name": "station",
+  "name": "stop_time",
   "fields": [
     {
-      "name": "id",
+      "name": "trip_id",
       "type": "string"
     },
     {
-      "name": "code",
+      "name": "arrival_time",
       "type": [
         "null",
         "string"
@@ -15,7 +15,7 @@
       "default": null
     },
     {
-      "name": "name",
+      "name": "departure_time",
       "type": [
         "null",
         "string"
@@ -23,23 +23,15 @@
       "default": null
     },
     {
-      "name": "lattitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
+      "name": "stop_id",
+      "type": "string"
     },
     {
-      "name": "longitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
+      "name" : "stop_sequence",
+      "type" : "int"
     },
     {
-      "name": "zoneId",
+      "name": "stop_headsign",
       "type": [
         "null",
         "string"
@@ -47,7 +39,7 @@
       "default": null
     },
     {
-      "name": "locationType",
+      "name": "pickup_type",
       "type": [
         "null",
         "int"
@@ -55,10 +47,26 @@
       "default": null
     },
     {
-      "name": "parentStation",
+      "name": "drop_off_type",
       "type": [
         "null",
-        "string"
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "shape_dist_traveled",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    },
+    {
+      "name": "timepoint",
+      "type": [
+        "null",
+        "int"
       ],
       "default": null
     },
@@ -71,5 +79,5 @@
       "default": null
     }
   ],
-  "connect.name": "station"
+  "connect.name": "stop_time"
 }

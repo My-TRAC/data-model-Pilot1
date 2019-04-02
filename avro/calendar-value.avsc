@@ -1,0 +1,47 @@
+{
+  "type": "record",
+  "name": "calendar",
+  "fields": [
+    {
+      "name": "service_id",
+      "type": "string"
+    },
+    {
+      "name": "monday",
+      "type": "int"
+    },
+    {
+      "name": "tuesday",
+      "type": "int"
+    },
+    {
+      "name": "wednesday",
+      "type": "int"
+    },
+    {
+      "name": "thursday",
+      "type": "int"
+    },
+    {
+      "name": "friday",
+      "type": "int"
+    },
+    {
+      "name": "saturday",
+      "type": "int"
+    },
+    {
+      "name": "sunday",
+      "type": "int"
+    },
+    {
+      "name": "start_date",
+      "type": "long"
+    },
+    {
+      "name": "end_date",
+      "type": "long"
+    }
+  ],
+  "connect.name": "calendar"
+}

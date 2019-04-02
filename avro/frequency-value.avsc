@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "frequency",
+  "fields": [
+    {
+      "name": "trip_id",
+      "type": "string"
+    },
+    {
+      "name": "start_time",
+      "type": "string"
+    },
+    {
+      "name": "end_time",
+      "type": "string"
+    },
+    {
+      "name": "headway_secs",
+      "type": "int"
+    },
+    {
+      "name": "exact_times",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "frequency"
+}

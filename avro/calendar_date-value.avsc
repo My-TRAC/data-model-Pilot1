@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "calendar_date",
+  "fields": [
+    {
+      "name": "service_id",
+      "type": "string"
+    },
+    {
+      "name": "date",
+      "type": "long"
+    },
+    {
+      "name": "exception_type",
+      "type": "int"
+    }
+  ],
+  "connect.name": "calendar_date"
+}

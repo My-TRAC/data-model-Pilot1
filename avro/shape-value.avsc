@@ -1,0 +1,31 @@
+{
+  "type": "record",
+  "name": "shape",
+  "fields": [
+    {
+      "name": "shape_id",
+      "type": "string"
+    },
+    {
+      "name": "shape_pt_lat",
+      "type": "float"
+    },
+    {
+      "name": "shape_pt_lon",
+      "type": "float"
+    },
+    {
+      "name": "shape_pt_sequence",
+      "type": "int"
+    },
+    {
+      "name": "shape_dist_travelled",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "shape"
+}

@@ -1,13 +1,21 @@
 {
   "type": "record",
-  "name": "station",
+  "name": "trip",
   "fields": [
     {
-      "name": "id",
+      "name": "route_id",
       "type": "string"
     },
     {
-      "name": "code",
+      "name": "service_id",
+      "type": "string"
+    },
+    {
+      "name": "trip_id",
+      "type": "string"
+    },
+    {
+      "name": "trip_headsign",
       "type": [
         "null",
         "string"
@@ -15,7 +23,7 @@
       "default": null
     },
     {
-      "name": "name",
+      "name": "trip_short_name",
       "type": [
         "null",
         "string"
@@ -23,31 +31,7 @@
       "default": null
     },
     {
-      "name": "lattitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "longitude",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "zoneId",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "locationType",
+      "name": "direction_id",
       "type": [
         "null",
         "int"
@@ -55,10 +39,34 @@
       "default": null
     },
     {
-      "name": "parentStation",
+      "name": "block_id",
       "type": [
         "null",
         "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "shape_id",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "wheelchair_accessible",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "bikes_allowed",
+      "type": [
+        "null",
+        "int"
       ],
       "default": null
     },
@@ -71,5 +79,5 @@
       "default": null
     }
   ],
-  "connect.name": "station"
+  "connect.name": "trip"
 }

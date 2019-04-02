@@ -1,0 +1,59 @@
+{
+  "type": "record",
+  "name": "feed_info",
+  "fields": [
+    {
+      "name": "feed_published_name",
+      "type": "string"
+    },
+    {
+      "name": "feed_published_url",
+      "type": "string"
+    },
+    {
+      "name": "feed_lang",
+      "type": "string"
+    },
+    {
+      "name": "feed_start_date",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "feed_end_date",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "feed_version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "feed_contact_email",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "feed_contact_url",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "feed_info"
+}
