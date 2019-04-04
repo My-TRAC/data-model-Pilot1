@@ -90,9 +90,28 @@
 
 ***Frequency***
 
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| trip_id | string | yes | operators platform/gtfs |
+| start_time| time | yes | operators platform/gtfs |
+| end_time | time | yes | operators platform/gtfs |
+| headway_secs | int | yes | operators platform/gtfs |
+| exact_times | enum | no | operators platform/gtfs |
+
 ***POI***
 
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| poi_id | string | yes | My-TRAC |
+| poi_type | string | no | crawled |
+| poi_name | string | no | crawled |
+| poi_lat | float | no | crawled |
+| poi_lon | float | no | crawled |
+| poi_amenity | string | no | crawled |
+| descriptors | string | no | My-TRAC |
+
 ***Route***
+
 
 ***Shape***
 
