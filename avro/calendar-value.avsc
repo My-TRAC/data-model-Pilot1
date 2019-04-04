@@ -36,11 +36,11 @@
     },
     {
       "name": "start_date",
-      "type": "long"
+      "type": "int"
     },
     {
       "name": "end_date",
-      "type": "long"
+      "type": "int"
     }
   ],
   "connect.name": "calendar"
