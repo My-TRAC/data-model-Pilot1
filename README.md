@@ -14,6 +14,8 @@
 | date | int with the form YYYYMMDD. Example 20180130 |
 | enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. |
 
+__For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/ __
+
 ***Activity***
 
 | Field Name | Field Type | Required | Source |
@@ -136,12 +138,64 @@
 | shape_pt_lon | float | yes | operators platform/gtfs |
 | shape_pt_sequence | int | yes | operators platform/gtfs |
 | shape_pt_sequence | int | yes | operators platform/gtfs |
-| shape_dist_traveled | int | no | operators platform/gtfs |
+| shape_dist_traveled | float | no | operators platform/gtfs |
 
 ***Stop_Time***
 
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| trip_id | string | yes | operators platform/gtfs |
+| arrival_time | time | no | operators platform/gtfs |
+| departure_time | time | no | operators platform/gtfs |
+| stop_id | string | yes | operators platform/gtfs |
+| stop_sequence | int | yes | operators platform/gtfs |
+| stop_headsign | string | no | operators platform/gtfs |
+| pickup_type | enum | no | operators platform/gtfs |
+| drop_off_type | enum | no | operators platform/gtfs |
+| shape_dist_traveled | float | no | operators platform/gtfs |
+| time_point | enum | no | operators platform/gtfs |
+| descriptors | string | no | My-TRAC |
+
 ***Stop***
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| stop_id | string | yes | operators platform/gtfs |
+| stop_code | string | no | operators platform/gtfs |
+| stop_name | string | no | operators platform/gtfs |
+| stop_desc | string | no | operators platform/gtfs |
+| stop_lat | float | no | operators platform/gtfs |
+| stop_lon | float | nog | operators platform/gtfs |
+| zone_id | string | no | operators platform/gtfs |
+| stop_url | string | no | operators platform/gtfs |
+| location_type | enum | no | operators platform/gtfs |
+| parent_station | string | no | operators platform/gtfs |
+| stop_timezone | string | no | operators platform/gtfs |
+| wheelchair_boarding | string | no | operators platform/gtfs |
+| level_id | string | no | operators platform/gtfs |
+| descriptors | string | no | operators platform/gtfs |
 
 ***Transfer***
 
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| from_stop_id | string | yes | operators platform/gtfs |
+| to_stop_id | string | yes | operators platform/gtfs |
+| transfer_type | enum | yes | operators platform/gtfs |
+| min_transfer_time | int | no | operators platform/gtfs |
+
 ***Trip***
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| route_id | string | yes | operators platform/gtfs |
+| service_id | string | yes | operators platform/gtfs |
+| trip_id | string | yes | operators platform/gtfs |
+| trip_headsign | string | no | operators platform/gtfs |
+| trip_short_name | string | no | operators platform/gtfs |
+| direction_id | int | no | operators platform/gtfs |
+| block_id | int | no | operators platform/gtfs |
+| shape_id | string | no | operators platform/gtfs |
+| wheelchair_accessible | int | no | operators platform/gtfs |
+| bikes_allowed | int | no | operators platform/gtfs |
+| descriptors | string | no | operators platform/gtfs |
