@@ -19,7 +19,7 @@
       "type": "int"
     },
     {
-      "name": "shape_dist_travelled",
+      "name": "shape_dist_traveled",
       "type": [
         "null",
         "float"
