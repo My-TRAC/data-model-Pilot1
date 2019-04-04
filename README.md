@@ -112,8 +112,31 @@
 
 ***Route***
 
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| route_id | string | yes | operators platform/gtfs |
+| agency_id | string | yes | operators platform/gtfs |
+| route_short_name | string | yes | operators platform/gtfs |
+| route_long_name | string | yes | operators platform/gtfs |
+| route_desc | string | no | operators platform/gtfs |
+| route_type | enum | no | operators platform/gtfs |
+| route_type | enum | yes | operators platform/gtfs |
+| route_url | string | no | operators platform/gtfs |
+| route_color | string | no | operators platform/gtfs |
+| route_text_color | string | no | operators platform/gtfs |
+| route_sort_order | string | no | operators platform/gtfs |
+| descriptors | string | no | My-TRAC |
 
 ***Shape***
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| shape_id | string | yes | operators platform/gtfs |
+| shape_pt_lat | float | yes | operators platform/gtfs |
+| shape_pt_lon | float | yes | operators platform/gtfs |
+| shape_pt_sequence | int | yes | operators platform/gtfs |
+| shape_pt_sequence | int | yes | operators platform/gtfs |
+| shape_dist_traveled | int | no | operators platform/gtfs |
 
 ***Stop_Time***
 
