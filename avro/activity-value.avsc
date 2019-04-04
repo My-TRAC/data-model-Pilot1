@@ -3,11 +3,11 @@
   "name": "activity",
   "fields": [
     {
-      "name": "id",
+      "name": "activity_id",
       "type": "string"
     },
     {
-      "name": "type",
+      "name": "activity_type",
       "type": [
         "null",
         "string"
@@ -15,7 +15,7 @@
       "default": null
     },
     {
-      "name": "name",
+      "name": "activity_name",
       "type": [
         "null",
         "string"
@@ -23,7 +23,7 @@
       "default": null
     },
     {
-      "name": "lattitude",
+      "name": "activity_lat",
       "type": [
         "null",
         "float"
@@ -31,7 +31,7 @@
       "default": null
     },
     {
-      "name": "longitude",
+      "name": "activity_lon",
       "type": [
         "null",
         "float"
@@ -47,7 +47,7 @@
       "default": null
     },
     {
-      "name": "activityType",
+      "name": "activity_type",
       "type": [
         "null",
         "string"
@@ -55,7 +55,7 @@
       "default": null
     },
     {
-      "name": "timeStart",
+      "name": "time_start",
       "type": [
         "null",
         "long"
@@ -63,7 +63,7 @@
       "default": null
     },
     {
-      "name": "timeEnd",
+      "name": "time_end",
       "type": [
         "null",
         "long"
