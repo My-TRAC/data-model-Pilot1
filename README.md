@@ -46,7 +46,7 @@ These represent the different items in the My-Trac data model. There is a one-to
 | agency_fare_url| string | no | operators platform/gtfs |
 | descriptors | string | no | My-TRAC |
 
-### calendar_Date
+### calendar_date
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
