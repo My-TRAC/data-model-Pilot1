@@ -118,8 +118,8 @@ __For those conditionally required fields, please look at the official GTFS spec
 | ---------- | ---------- | -------- | ------ |
 | route_id | string | yes | operators platform/gtfs |
 | agency_id | string | yes | operators platform/gtfs |
-| route_short_name | string | yes | operators platform/gtfs |
-| route_long_name | string | yes | operators platform/gtfs |
+| route_short_name | string | conditional | operators platform/gtfs |
+| route_long_name | string | conditional | operators platform/gtfs |
 | route_desc | string | no | operators platform/gtfs |
 | route_type | enum | no | operators platform/gtfs |
 | route_type | enum | yes | operators platform/gtfs |
@@ -145,8 +145,8 @@ __For those conditionally required fields, please look at the official GTFS spec
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
 | trip_id | string | yes | operators platform/gtfs |
-| arrival_time | time | no | operators platform/gtfs |
-| departure_time | time | no | operators platform/gtfs |
+| arrival_time | time | conditional | operators platform/gtfs |
+| departure_time | time | conditional | operators platform/gtfs |
 | stop_id | string | yes | operators platform/gtfs |
 | stop_sequence | int | yes | operators platform/gtfs |
 | stop_headsign | string | no | operators platform/gtfs |
@@ -162,14 +162,14 @@ __For those conditionally required fields, please look at the official GTFS spec
 | ---------- | ---------- | -------- | ------ |
 | stop_id | string | yes | operators platform/gtfs |
 | stop_code | string | no | operators platform/gtfs |
-| stop_name | string | no | operators platform/gtfs |
+| stop_name | string | conditional | operators platform/gtfs |
 | stop_desc | string | no | operators platform/gtfs |
-| stop_lat | float | no | operators platform/gtfs |
-| stop_lon | float | nog | operators platform/gtfs |
-| zone_id | string | no | operators platform/gtfs |
+| stop_lat | float | conditional | operators platform/gtfs |
+| stop_lon | float | conditional | operators platform/gtfs |
+| zone_id | string | conditional | operators platform/gtfs |
 | stop_url | string | no | operators platform/gtfs |
 | location_type | enum | no | operators platform/gtfs |
-| parent_station | string | no | operators platform/gtfs |
+| parent_station | string | conditional | operators platform/gtfs |
 | stop_timezone | string | no | operators platform/gtfs |
 | wheelchair_boarding | string | no | operators platform/gtfs |
 | level_id | string | no | operators platform/gtfs |
