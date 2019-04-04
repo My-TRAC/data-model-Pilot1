@@ -16,19 +16,11 @@
     },
     {
       "name": "route_short_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "string"
     },
     {
       "name": "route_long_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "string"
     },
     {
       "name": "route_desc",
