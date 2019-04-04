@@ -77,6 +77,17 @@
 
 ***Feed_Info***
 
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| feed_published_name | string | yes | operators platform/gtfs |
+| feed_published_url | string | yes | operators platform/gtfs |
+| feed_lang | string | yes | operators platform/gtfs |
+| feed_start_date | date | no | operators platform/gtfs |
+| feed_end_date | date | no | operators platform/gtfs |
+| feed_version | string | no | operators platform/gtfs |
+| feed_contact_email | string | no | operators platform/gtfs |
+| feed_contact_url | string | no | operators platform/gtfs |
+
 ***Frequency***
 
 ***POI***
