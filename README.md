@@ -1,5 +1,5 @@
 
-# My-TRAC Data Model**
+# My-TRAC Data Model
 
 ## Data Types
 
