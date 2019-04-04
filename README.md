@@ -1,7 +1,7 @@
 
-**My-TRAC Data Model**
+# My-TRAC Data Model**
 
-***Data Types***
+## Data Types
 
 | Type name | Description |
 | --------- | ----------- |
@@ -16,7 +16,9 @@
 
 __For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/__
 
-***Activity***
+## Data Items
+
+### activity
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -29,7 +31,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | time_end | timestamp | yes | crawled |
 | descriptors | string | no | My-TRAC |
 
-***Agency***
+### agency (Operator)
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -42,7 +44,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | agency_fare_url| string | no | operators platform/gtfs |
 | descriptors | string | no | My-TRAC |
 
-***Calendar_Date***
+### calendar_Date
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -50,7 +52,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | date | date | yes | operators platform/gtfs |
 | exception_type| enum | yes | operators platform/gtfs |
 
-***Calendar***
+### calendar
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -66,7 +68,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | end_date | date | yes | operators platform/gtfs |
 
 
-***Facility***
+### facility
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -77,7 +79,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | facility_type | string | yes | crawled |
 | descriptors | string | no | My-TRAC |
 
-***Feed_Info***
+### feed_info
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -90,7 +92,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | feed_contact_email | string | no | operators platform/gtfs |
 | feed_contact_url | string | no | operators platform/gtfs |
 
-***Frequency***
+### frequency
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -100,7 +102,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | headway_secs | int | yes | operators platform/gtfs |
 | exact_times | enum | no | operators platform/gtfs |
 
-***POI***
+### poi
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -112,7 +114,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | poi_amenity | string | no | crawled |
 | descriptors | string | no | My-TRAC |
 
-***Route***
+### route
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -129,7 +131,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | route_sort_order | string | no | operators platform/gtfs |
 | descriptors | string | no | My-TRAC |
 
-***Shape***
+### shape
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -140,7 +142,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | shape_pt_sequence | int | yes | operators platform/gtfs |
 | shape_dist_traveled | float | no | operators platform/gtfs |
 
-***Stop_Time***
+### stop_time
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -156,7 +158,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | time_point | enum | no | operators platform/gtfs |
 | descriptors | string | no | My-TRAC |
 
-***Stop***
+### stop
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -175,7 +177,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | level_id | string | no | operators platform/gtfs |
 | descriptors | string | no | operators platform/gtfs |
 
-***Transfer***
+### transfer
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
@@ -184,7 +186,7 @@ __For those conditionally required fields, please look at the official GTFS spec
 | transfer_type | enum | yes | operators platform/gtfs |
 | min_transfer_time | int | no | operators platform/gtfs |
 
-***Trip***
+### trip
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
