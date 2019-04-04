@@ -14,7 +14,7 @@
 | date | int with the form YYYYMMDD. Example 20180130 |
 | enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. |
 
-__For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/ __
+__For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/__
 
 ***Activity***
 
