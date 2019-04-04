@@ -18,6 +18,8 @@ __For those conditionally required fields, please look at the official GTFS spec
 
 ## Data Items
 
+These represent the different items in the My-Trac data model. There is a one-to-one mapping between items and tables, and these can be synchronized by individual components' My-SQLs.
+
 ### activity
 
 | Field Name | Field Type | Required | Source |
