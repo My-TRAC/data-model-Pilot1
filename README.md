@@ -2,6 +2,7 @@
 **My-TRAC Data Model**
 
 ***Data Types***
+
 | Type name | Description |
 | --------- | ----------- |
 | int | 32-bit integer |
@@ -24,6 +25,7 @@
 | activity_type | string | yes | crawled |
 | time_start | timestamp | yes | crawled |
 | time_end | timestamp | yes | crawled |
+| descriptors | string | no | My-TRAC |
 
 ***Agency***
 
@@ -63,6 +65,15 @@
 
 
 ***Facility***
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| facility_id | string | yes | My-TRAC |
+| facility_name | string | yes | crawled |
+| facility_lat | string | yes | crawled |
+| facility_lon | float | yes | crawled |
+| facility_type | string | yes | crawled |
+| descriptors | string | no | My-TRAC |
 
 ***Feed_Info***
 
