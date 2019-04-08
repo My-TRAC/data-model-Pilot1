@@ -28,10 +28,21 @@ These represent the different items in the My-Trac data model. There is a one-to
 | activity_name | string | yes | crawled |
 | activity_lat | string | yes | crawled |
 | activity_lon | float | yes | crawled |
-| activity_type | string | yes | crawled |
+| activity_type | enum | yes | crawled |
 | time_start | timestamp | yes | crawled |
 | time_end | timestamp | yes | crawled |
 | descriptors | string | no | My-TRAC |
+
+activity_type enum can have the following values:
+* 0: work/out-of-office
+* 1: education
+* 2: health
+* 3: service
+* 4: religion
+* 5: history/culture
+* 6: hobby
+* 7: eating & drinking
+* 8: shopping
 
 ### agency (Operator)
 
@@ -109,12 +120,23 @@ These represent the different items in the My-Trac data model. There is a one-to
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
 | poi_id | string | yes | My-TRAC |
-| poi_type | string | no | crawled |
+| poi_type | enum | no | crawled |
 | poi_name | string | no | crawled |
 | poi_lat | float | no | crawled |
 | poi_lon | float | no | crawled |
 | poi_amenity | string | no | crawled |
 | descriptors | string | no | My-TRAC |
+
+poi_type enum can have the following values:
+* 0: work/out-of-office
+* 1: education
+* 2: health
+* 3: service
+* 4: religion
+* 5: history/culture
+* 6: hobby
+* 7: eating & drinking
+* 8: shopping
 
 ### route
 
