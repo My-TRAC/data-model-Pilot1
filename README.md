@@ -29,8 +29,8 @@ These represent the different items in the My-Trac data model. There is a one-to
 | activity_lat | string | yes | crawled |
 | activity_lon | float | yes | crawled |
 | activity_type | enum | yes | crawled |
-| time_start | timestamp | yes | crawled |
-| time_end | timestamp | yes | crawled |
+| activity_start | timestamp | yes | crawled |
+| activity_end | timestamp | yes | crawled |
 | descriptors | string | no | My-TRAC |
 
 activity_type enum can have the following values:
