@@ -10,7 +10,7 @@
       "name": "activity_type",
       "type": [
         "null",
-        "string"
+        "int"
       ],
       "default": null
     },
