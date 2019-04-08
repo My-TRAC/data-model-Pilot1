@@ -1,13 +1,21 @@
 {
   "type": "record",
-  "name": "pointofinterest",
+  "name": "poi",
   "fields": [
     {
-      "name": "id",
+      "name": "poi_id",
       "type": "string"
     },
     {
-      "name": "type",
+      "name": "poi_type",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "poi_name",
       "type": [
         "null",
         "string"
@@ -15,15 +23,7 @@
       "default": null
     },
     {
-      "name": "name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "lattitude",
+      "name": "poi_lat",
       "type": [
         "null",
         "float"
@@ -31,7 +31,7 @@
       "default": null
     },
     {
-      "name": "longitude",
+      "name": "poi_lon",
       "type": [
         "null",
         "float"
@@ -47,7 +47,7 @@
       "default": null
     },
     {
-      "name": "amenity",
+      "name": "poi_amenity",
       "type": [
         "null",
         "string"
@@ -55,5 +55,5 @@
       "default": null
     }
   ],
-  "connect.name": "pointofinterest"
+  "connect.name": "poi"
 }
