@@ -55,7 +55,7 @@
       "default": null
     },
     {
-      "name": "time_start",
+      "name": "activity_start",
       "type": [
         "null",
         "long"
@@ -63,7 +63,7 @@
       "default": null
     },
     {
-      "name": "time_end",
+      "name": "activity_end",
       "type": [
         "null",
         "long"
