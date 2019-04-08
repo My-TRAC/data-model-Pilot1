@@ -3,11 +3,19 @@
   "name": "facility",
   "fields": [
     {
-      "name": "id",
+      "name": "facility_id",
       "type": "string"
     },
     {
-      "name": "type",
+      "name": "facility_type",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "facility_name",
       "type": [
         "null",
         "string"
@@ -15,15 +23,7 @@
       "default": null
     },
     {
-      "name": "name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "lattitude",
+      "name": "facility_lat",
       "type": [
         "null",
         "float"
@@ -31,7 +31,7 @@
       "default": null
     },
     {
-      "name": "longitude",
+      "name": "facility_lon",
       "type": [
         "null",
         "float"
