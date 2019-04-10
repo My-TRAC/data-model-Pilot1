@@ -89,7 +89,7 @@ activity_type enum can have the following values:
 | facility_name | string | yes | crawled |
 | facility_lat | string | yes | crawled |
 | facility_lon | float | yes | crawled |
-| facility_type | string | yes | crawled |
+| facility_type | enum | yes | crawled |
 | descriptors | string | no | My-TRAC |
 
 ### feed_info
