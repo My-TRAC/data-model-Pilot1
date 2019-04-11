@@ -8,46 +8,26 @@
     },
     {
       "name": "poi_type",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
+      "type": "int"
     },
     {
       "name": "poi_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "string"
     },
     {
       "name": "poi_lat",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
+      "type": "float"
     },
     {
       "name": "poi_lon",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
-    },
-    {
-      "name": "descriptors",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "float"
     },
     {
       "name": "poi_amenity",
+      "type": "string"
+    },
+    {
+      "name": "descriptors",
       "type": [
         "null",
         "string"
