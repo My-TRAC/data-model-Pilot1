@@ -8,67 +8,39 @@
     },
     {
       "name": "activity_type",
-      "type": [
-        "null",
-        "int"
-      ],
-      "default": null
+      "type": "int"
     },
     {
       "name": "activity_name",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "string"
     },
     {
       "name": "activity_lat",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
+      "type": "float"
     },
     {
       "name": "activity_lon",
-      "type": [
-        "null",
-        "float"
-      ],
-      "default": null
+      "type": "float"
     },
     {
       "name": "descriptors",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "string"
     },
     {
       "name": "activity_type",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": "string"
     },
     {
       "name": "activity_start",
-      "type": [
-        "null",
-        "long"
-      ],
-      "default": null
+      "type": "long"
     },
     {
       "name": "activity_end",
-      "type": [
-        "null",
-        "long"
-      ],
-      "default": null
+      "type": "long"
+    },
+    {
+      "name": "activity_timezone",
+      "type": "string"
     }
   ],
   "connect.name": "activity"
