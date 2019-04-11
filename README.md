@@ -121,11 +121,11 @@ activity_type enum can have the following values:
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
 | poi_id | string | yes | My-TRAC |
-| poi_type | enum | no | crawled |
-| poi_name | string | no | crawled |
-| poi_lat | float | no | crawled |
-| poi_lon | float | no | crawled |
-| poi_amenity | string | no | crawled |
+| poi_type | enum | yes | crawled |
+| poi_name | string | yes | crawled |
+| poi_lat | float | yes | crawled |
+| poi_lon | float | yes | crawled |
+| poi_amenity | string | yes | crawled |
 | descriptors | string | no | My-TRAC |
 
 poi_type enum can have the following values:
