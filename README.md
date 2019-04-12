@@ -116,6 +116,24 @@ activity_type enum can have the following values:
 | headway_secs | int | yes | operators platform/gtfs |
 | exact_times | enum | no | operators platform/gtfs |
 
+### mobility_trace
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | My-Trac Companion |
+| trace_lat| float | yes | My-Trac Companion |
+| trace_lon | float | yes | My-Trac Companion |
+| trace_prov | string | yes | My-Trac Companion |
+| trace_time | timestamp | yes | My-Trac Companion |
+| trace_acc | float | no | My-Trac Companion |
+| trace_alt | float | no | My-Trac Companion |
+| trace_bear | float | no | My-Trac Companion |
+| trace_bear_acc | float | no | My-Trac Companion |
+| trace_speed | float | no | My-Trac Companion |
+| trace_speed_acc | float | no | My-Trac Companion |
+| trace_vert_acc | float | no | My-Trac Companion |
+
+
 ### poi
 
 | Field Name | Field Type | Required | Source |
