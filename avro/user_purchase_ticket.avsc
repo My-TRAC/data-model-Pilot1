@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "user_purchase_ticket",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "tickets_purchased",
+      "type": "int"
+    },
+    {
+      "name": "time",
+      "type": "timestamp"
+    }
+  ],
+  "connect.name": "user_purchase_ticket"
+}

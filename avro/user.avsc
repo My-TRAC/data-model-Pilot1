@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "user",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "user_registration_date",
+      "type": "date"
+    }
+  ],
+  "connect.name": "user"
+}

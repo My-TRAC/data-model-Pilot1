@@ -1,0 +1,19 @@
+{
+  "type": "record",
+  "name": "user_views_activity",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "activity_id",
+      "type": "string"
+    },
+    {
+      "name": "time",
+      "type": "timestamp"
+    }
+  ],
+  "connect.name": "user_views_activity"
+}

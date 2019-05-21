@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "user_uses_app",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "time",
+      "type": "timestamp"
+    }
+  ],
+  "connect.name": "user_uses_app"
+}

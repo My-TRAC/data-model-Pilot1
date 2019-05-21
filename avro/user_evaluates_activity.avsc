@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "user_evaluates_activity",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "activity_id",
+      "type": "string"
+    },
+    {
+      "name": "rating",
+      "type": "int"
+    },
+    {
+      "name": "time",
+      "type": "timestamp"
+    }
+  ],
+  "connect.name": "user_evaluates_activity"
+}
