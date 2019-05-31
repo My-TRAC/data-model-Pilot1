@@ -16,7 +16,7 @@
     },
     {
       "name": "time",
-      "type": "timestamp"
+      "type": "long"
     }
   ],
   "connect.name": "user_evaluates_activity"

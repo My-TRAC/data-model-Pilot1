@@ -8,7 +8,7 @@
     },
     {
       "name": "user_registration_date",
-      "type": "date"
+      "type": "long"
     }
   ],
   "connect.name": "user"

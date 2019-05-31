@@ -244,3 +244,51 @@ poi_type enum can have the following values:
 | wheelchair_accessible | int | no | operators platform/gtfs |
 | bikes_allowed | int | no | operators platform/gtfs |
 | descriptors | string | no | operators platform/gtfs |
+
+### user
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | MyTrac-Companion |
+| user_registration_date | timestamp | yes | MyTrac-Companion |
+
+### user_evaluates_activity
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | MyTrac-Companion |
+| activity_id | string | yes | MyTrac-Companion |
+| rating | int | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion |
+
+### user_joins_group
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | MyTrac-Companion |
+| group_id | string | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion |
+
+### user_purchases_ticket
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | MyTrac-Companion |
+| tickets_purchased | int | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion |
+
+### user_uses_app
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion |
+
+### user_views_activity
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| user_id | string | yes | MyTrac-Companion |
+| activity_id | string | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion |
+

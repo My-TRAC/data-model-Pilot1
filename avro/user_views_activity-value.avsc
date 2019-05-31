@@ -12,7 +12,7 @@
     },
     {
       "name": "time",
-      "type": "timestamp"
+      "type": "long"
     }
   ],
   "connect.name": "user_views_activity"

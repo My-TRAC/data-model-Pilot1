@@ -7,8 +7,12 @@
       "type": "string"
     },
     {
+      "name": "group_id",
+      "type": "string"
+    },
+    {
       "name": "time",
-      "type": "timestamp"
+      "type": "long"
     }
   ],
   "connect.name": "user_joins_group"
