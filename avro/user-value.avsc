@@ -45,6 +45,42 @@
     {
       "name": "user_working_hours",
       "type": "int"
+    },
+    {
+      "name": "user_interest_work",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_education",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_health",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_service",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_religion",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_history",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_hobby",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_eating",
+      "type": "float"
+    },
+    {
+      "name": "user_interest_shopping",
+      "type": "float"
     }
   ],
   "connect.name": "user"

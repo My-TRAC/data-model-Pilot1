@@ -260,6 +260,15 @@ poi_type enum can have the following values:
 | user_marital_status | int | yes | MyTrac-Companion |
 | user_traveller_type | enum | yes | MyTrac-Companion |
 | user_working_hours | int | yes | MyTrac-Companion |
+| user_interest_work | float | yes | MyTrac-Companion |
+| user_interest_education | float | yes | MyTrac-Companion |
+| user_interest_health | float | yes | MyTrac-Companion |
+| user_interest_service | float | yes | MyTrac-Companion |
+| user_interest_religion | float | yes | MyTrac-Companion |
+| user_interest_history | float | yes | MyTrac-Companion |
+| user_interest_hobby | float | yes | MyTrac-Companion |
+| user_interest_eating | float | yes | MyTrac-Companion |
+| user_interest_shopping | float | yes | MyTrac-Companion |
 
 
 user_gender enum can have the following values:
