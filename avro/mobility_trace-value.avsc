@@ -1,0 +1,83 @@
+{
+  "type": "record",
+  "name": "mobility_trace",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "trace_lat",
+      "type": "float"
+    },
+    {
+      "name": "trace_lon",
+      "type": "float"
+    },
+    {
+      "name": "trace_prov",
+      "type": "string"
+    },
+    {
+      "name": "trace_time",
+      "type": "long"
+    },
+    {
+      "name": "trace_acc",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    },
+    {
+      "name": "trace_alt",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    },
+    {
+      "name": "trace_bear",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    },
+    {
+      "name": "trace_bear_acc",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    },
+    {
+      "name": "trace_speed",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    },
+    {
+      "name": "trace_speed_acc",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    },
+    {
+      "name": "trace_vert_acc",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default" : null
+    }
+  ],
+  "connect.name": "mobility_trace"
+}
