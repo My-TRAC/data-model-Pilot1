@@ -9,6 +9,42 @@
     {
       "name": "user_registration_date",
       "type": "long"
+    },
+    {
+      "name": "user_age",
+      "type": "int"
+    },
+    {
+      "name": "user_gender",
+      "type": "int"
+    },
+    {
+      "name": "user_country",
+      "type": "string"
+    },
+    {
+      "name": "user_nationality",
+      "type": "string"
+    },
+    {
+      "name": "user_work_status",
+      "type": "int"
+    },
+    {
+      "name": "user_tweets",
+      "type": "int"
+    },
+    {
+      "name": "user_marital_status",
+      "type": "int"
+    },
+    {
+      "name": "user_traveller_type",
+      "type": "int"
+    },
+    {
+      "name": "user_working_hours",
+      "type": "int"
     }
   ],
   "connect.name": "user"

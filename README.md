@@ -251,6 +251,34 @@ poi_type enum can have the following values:
 | ---------- | ---------- | -------- | ------ |
 | user_id | string | yes | MyTrac-Companion |
 | user_registration_date | timestamp | yes | MyTrac-Companion |
+| user_age | int | yes | MyTrac-Companion |
+| user_gender | enum | yes | MyTrac-Companion |
+| user_country | string | yes | MyTrac-Companion |
+| user_nationality | string | yes | MyTrac-Companion |
+| user_work_status | enum | yes | MyTrac-Companion |
+| user_tweets | int | yes | MyTrac-Companion |
+| user_marital_status | int | yes | MyTrac-Companion |
+| user_traveller_type | enum | yes | MyTrac-Companion |
+| user_working_hours | int | yes | MyTrac-Companion |
+
+
+user_gender enum can have the following values:
+* 0: male
+* 1: female
+* 2: other
+
+user_work_status enum can have the following values:
+* 0: employed 
+* 1: unemployed 
+
+user_marital_status enum can have the following values:
+* 0: single
+* 1: married
+
+** User working hours need to be clarified **
+** User traveller type enum need to be defined **
+
+
 
 ### user_evaluates_activity
 
