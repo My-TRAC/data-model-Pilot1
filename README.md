@@ -3,16 +3,16 @@
 
 ## Data Types
 
-| Type name | Description |
-| --------- | ----------- |
-| int | 32-bit integer |
-| long | 64-bit integer |
-| float | 32-bit floating point number |
-| string | variable length string |
-| timestamp | long containing epoch time in seconds |
-| time | string with format "HH:MM:SS" |
-| date | int with the form YYYYMMDD. Example 20180130 |
-| enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. |
+| Type name | Description | MY-SQL type |
+| --------- | ----------- | ----------- |
+| int | 32-bit integer | INT |
+| long | 64-bit integer | BIGINT |
+| float | 32-bit floating point number | FLOAT |
+| string | variable length string | VARCHAR |
+| timestamp | long containing epoch time in seconds | TIMESTAMP |
+| time | string with format "HH:MM:SS" | TIME | 
+| date | int with the form YYYYMMDD. Example 20180130 | DATE | 
+| enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. | INT |
 
 __For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/__
 
