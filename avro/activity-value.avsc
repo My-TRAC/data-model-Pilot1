@@ -7,10 +7,6 @@
       "type": "string"
     },
     {
-      "name": "activity_type",
-      "type": "int"
-    },
-    {
       "name": "activity_name",
       "type": "string"
     },
@@ -28,7 +24,7 @@
     },
     {
       "name": "activity_type",
-      "type": "string"
+      "type": "int"
     },
     {
       "name": "activity_start",
