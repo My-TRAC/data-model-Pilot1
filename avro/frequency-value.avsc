@@ -25,11 +25,21 @@
     },
     {
       "name": "start_time",
-      "type": "string"
+      "type": {
+          "type":"int",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Time",  
+          "logicalType": "time-millis"
+        }
     },
     {
       "name": "end_time",
-      "type": "string"
+      "type": {
+          "type":"int",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Time",  
+          "logicalType": "time-millis"
+        }
     },
     {
       "name": "headway_secs",
