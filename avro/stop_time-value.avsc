@@ -25,19 +25,27 @@
     },
     {
       "name": "arrival_time",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": ["null", 
+               { 
+                 "type":"int",
+                 "connect.version":1,
+                 "connect.name":"org.apache.kafka.connect.data.Time",
+                 "logicalType":"time-millis"
+                 }
+              ],
+      "default":null
     },
     {
       "name": "departure_time",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
+      "type": ["null", 
+               { 
+                 "type":"int",
+                 "connect.version":1,
+                 "connect.name":"org.apache.kafka.connect.data.Time",
+                 "logicalType":"time-millis"
+                }
+              ],
+      "default":null
     },
     {
       "name": "stop_id",
@@ -84,14 +92,6 @@
       "type": [
         "null",
         "int"
-      ],
-      "default": null
-    },
-    {
-      "name": "descriptors",
-      "type": [
-        "null",
-        "string"
       ],
       "default": null
     }
