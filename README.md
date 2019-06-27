@@ -5,13 +5,14 @@
 
 | Type name | Description | MY-SQL type |
 | --------- | ----------- | ----------- |
+| boolean | A boolean | TINYINT |
 | int | 32-bit integer | INT |
 | long | 64-bit integer | BIGINT |
 | float | 32-bit floating point number | FLOAT |
 | string | variable length string | VARCHAR |
-| timestamp | long containing epoch time in seconds | TIMESTAMP |
-| time | string with format "HH:MM:SS" | TIME | 
-| date | int with the form YYYYMMDD. Example 20180130 | DATE | 
+| timestamp | string with format YYYY-MM-DD hh:mm:ss | TIMESTAMP |
+| time | string with format "hh:mm:ss" | TIME | 
+| date | int with the form YYYYMMDD. Example 20180130 | INT | 
 | enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. | INT |
 
 __For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/__
@@ -24,7 +25,10 @@ These represent the different items in the My-Trac data model. There is a one-to
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
-| activity_id | string | yes | My-TRAC |
+| mytrac_id | long | yes | MyTrac Activity Crawler |
+| mytrac_is_valid | boolean | yes | MyTrac Activity Crawler |
+| mytrac_last_modified | timestamp | yes | MyTrac Activity Crawler |
+| activity_id | string | yes | crawled |
 | activity_name | string | yes | crawled |
 | activity_lat | string | yes | crawled |
 | activity_lon | float | yes | crawled |
@@ -32,7 +36,6 @@ These represent the different items in the My-Trac data model. There is a one-to
 | activity_start | timestamp | yes | crawled |
 | activity_end | timestamp | yes | crawled |
 | activity_timezone | string | yes | crawled |
-| descriptors | string | no | My-TRAC |
 
 activity_type enum can have the following values:
 * 0: work/out-of-office
