@@ -3,6 +3,23 @@
   "name": "activity",
   "fields": [
     {
+      "name": "mytrac_id",
+      "type": "long"
+    },
+    {
+      "name": "mytrac_is_valid",
+      "type": "boolean"
+    },
+    {
+      "name": "mytrac_last_modified",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
+    },
+    {
       "name": "activity_id",
       "type": "string"
     },
@@ -28,11 +45,21 @@
     },
     {
       "name": "activity_start",
-      "type": "long"
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
     },
     {
       "name": "activity_end",
-      "type": "long"
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
     },
     {
       "name": "activity_timezone",
