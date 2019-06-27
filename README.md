@@ -52,6 +52,9 @@ activity_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | agency_id | string | yes | operators platform/gtfs |
 | agency_name | string | yes | operators platform/gtfs |
 | agency_url | string | yes | operators platform/gtfs |
