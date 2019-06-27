@@ -2,6 +2,23 @@
   "type": "record",
   "name": "feed_info",
   "fields": [
+     {
+      "name": "mytrac_id",
+      "type": "long"
+    },
+    {
+      "name": "mytrac_is_valid",
+      "type": "boolean"
+    },
+    {
+      "name": "mytrac_last_modified",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
+    },
     {
       "name": "feed_published_name",
       "type": "string"
