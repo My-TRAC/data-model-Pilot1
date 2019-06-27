@@ -28,7 +28,7 @@ These represent the different items in the My-Trac data model. There is a one-to
 | mytrac_id | long | yes | MyTrac Activity Crawler |
 | mytrac_is_valid | boolean | yes | MyTrac Activity Crawler |
 | mytrac_last_modified | timestamp | yes | MyTrac Activity Crawler |
-| activity_creation_date | timestamp | MyTrac Activity Crawler | 
+| activity_creation_date | timestamp | yes | MyTrac Activity Crawler | 
 | activity_id | string | yes | crawled |
 | activity_name | string | yes | crawled |
 | activity_lat | string | yes | crawled |
