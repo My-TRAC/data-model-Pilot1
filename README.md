@@ -141,6 +141,9 @@ activity_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | My-Trac Companion |
+| mytrac_is_valid | boolean | yes | My-Trac Companion |
+| mytrac_last_modified | timestamp | yes | My-Trac Companion |
 | user_id | string | yes | My-Trac Companion |
 | trace_lat| float | yes | My-Trac Companion |
 | trace_lon | float | yes | My-Trac Companion |
@@ -159,13 +162,15 @@ activity_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | My-TRAC |
+| mytrac_is_valid | boolean | yes | My-TRAC |
+| mytrac_last_modified | timestamp | yes | My-TRAC |
 | poi_id | string | yes | My-TRAC |
 | poi_type | enum | yes | crawled |
 | poi_name | string | yes | crawled |
 | poi_lat | float | yes | crawled |
 | poi_lon | float | yes | crawled |
 | poi_amenity | string | yes | crawled |
-| descriptors | string | no | My-TRAC |
 
 poi_type enum can have the following values:
 * 0: work/out-of-office
@@ -182,6 +187,9 @@ poi_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | route_id | string | yes | operators platform/gtfs |
 | agency_id | string | yes | operators platform/gtfs |
 | route_short_name | string | conditional | operators platform/gtfs |
@@ -193,12 +201,14 @@ poi_type enum can have the following values:
 | route_color | string | no | operators platform/gtfs |
 | route_text_color | string | no | operators platform/gtfs |
 | route_sort_order | string | no | operators platform/gtfs |
-| descriptors | string | no | My-TRAC |
 
 ### shape
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | shape_id | string | yes | operators platform/gtfs |
 | shape_pt_lat | float | yes | operators platform/gtfs |
 | shape_pt_lon | float | yes | operators platform/gtfs |
@@ -210,6 +220,9 @@ poi_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | trip_id | string | yes | operators platform/gtfs |
 | arrival_time | time | conditional | operators platform/gtfs |
 | departure_time | time | conditional | operators platform/gtfs |
@@ -220,12 +233,14 @@ poi_type enum can have the following values:
 | drop_off_type | enum | no | operators platform/gtfs |
 | shape_dist_traveled | float | no | operators platform/gtfs |
 | time_point | enum | no | operators platform/gtfs |
-| descriptors | string | no | My-TRAC |
 
 ### stop
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | stop_id | string | yes | operators platform/gtfs |
 | stop_code | string | no | operators platform/gtfs |
 | stop_name | string | conditional | operators platform/gtfs |
@@ -239,12 +254,14 @@ poi_type enum can have the following values:
 | stop_timezone | string | no | operators platform/gtfs |
 | wheelchair_boarding | string | no | operators platform/gtfs |
 | level_id | string | no | operators platform/gtfs |
-| descriptors | string | no | operators platform/gtfs |
 
 ### transfer
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | from_stop_id | string | yes | operators platform/gtfs |
 | to_stop_id | string | yes | operators platform/gtfs |
 | transfer_type | enum | yes | operators platform/gtfs |
@@ -254,6 +271,9 @@ poi_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | route_id | string | yes | operators platform/gtfs |
 | service_id | string | yes | operators platform/gtfs |
 | trip_id | string | yes | operators platform/gtfs |
@@ -264,12 +284,14 @@ poi_type enum can have the following values:
 | shape_id | string | no | operators platform/gtfs |
 | wheelchair_accessible | int | no | operators platform/gtfs |
 | bikes_allowed | int | no | operators platform/gtfs |
-| descriptors | string | no | operators platform/gtfs |
 
 ### user
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | user_registration_date | timestamp | yes | MyTrac-Companion |
 | user_age | int | yes | MyTrac-Companion |
@@ -314,6 +336,9 @@ user_marital_status enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | activity_id | string | yes | MyTrac-Companion |
 | rating | int | yes | MyTrac-Companion |
@@ -323,6 +348,9 @@ user_marital_status enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | group_id | string | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
@@ -331,6 +359,9 @@ user_marital_status enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | tickets_purchased | int | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
@@ -339,6 +370,9 @@ user_marital_status enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
 
@@ -346,6 +380,9 @@ user_marital_status enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | activity_id | string | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
