@@ -25,15 +25,15 @@
     },
     {
       "name": "agency_name",
-      "type": "string",
+      "type": "string"
     },
     {
       "name": "agency_url",
-      "type": "string",
+      "type": "string"
     },
     {
       "name": "agency_timezone",
-      "type": "string",
+      "type": "string"
     },
     {
       "name": "agency_lang",
