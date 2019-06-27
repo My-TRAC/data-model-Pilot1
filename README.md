@@ -64,7 +64,6 @@ activity_type enum can have the following values:
 | agency_lang | string | no | operators platform/gtfs |
 | agency_phone | string | no | operators platform/gtfs |
 | agency_fare_url| string | no | operators platform/gtfs |
-| descriptors | string | no | My-TRAC |
 
 ### calendar_date
 
@@ -108,12 +107,14 @@ activity_type enum can have the following values:
 | facility_lat | string | yes | crawled |
 | facility_lon | float | yes | crawled |
 | facility_type | enum | yes | crawled |
-| descriptors | string | no | My-TRAC |
 
 ### feed_info
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | feed_published_name | string | yes | operators platform/gtfs |
 | feed_published_url | string | yes | operators platform/gtfs |
 | feed_lang | string | yes | operators platform/gtfs |
@@ -127,6 +128,9 @@ activity_type enum can have the following values:
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | operators platform |
+| mytrac_is_valid | boolean | yes | operators platform |
+| mytrac_last_modified | timestamp | yes | operators platform |
 | trip_id | string | yes | operators platform/gtfs |
 | start_time| time | yes | operators platform/gtfs |
 | end_time | time | yes | operators platform/gtfs |
