@@ -9,11 +9,12 @@
 | int | 32-bit integer | INT |
 | long | 64-bit integer | BIGINT |
 | float | 32-bit floating point number | FLOAT |
-| string | variable length string | VARCHAR |
+| string | variable length string | TINYTEXT |
 | timestamp | string with format YYYY-MM-DD hh:mm:ss | TIMESTAMP |
 | time | string with format "hh:mm:ss" | TIME | 
 | date | int with the form YYYYMMDD. Example 20180130 | INT | 
 | enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. | INT |
+| json | string representing a JSON | JSON |
 
 __For those conditionally required fields, please look at the official GTFS specification: https://gtfs.org/reference/static/__
 
