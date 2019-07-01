@@ -5,7 +5,7 @@
 
 | Type name | Description | MY-SQL type |
 | --------- | ----------- | ----------- |
-| boolean | A boolean | TINYINT |
+| boolean | A boolean | BIT(1) |
 | int | 32-bit integer | INT |
 | long | 64-bit integer | BIGINT |
 | float | 32-bit floating point number | FLOAT |
