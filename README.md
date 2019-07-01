@@ -330,6 +330,32 @@ user_marital_status enum can have the following values:
 ** User working hours need to be clarified **
 ** User traveller type enum need to be defined **
 
+### user_choices_route
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
+| user_id | string | yes | MyTrac-Companion |
+| group_id| string | no | MyTrac-Companion |
+| from_name | string | yes | MyTrac-Companion |
+| from_address | string | yes | MyTrac-Companion |
+| from_lon | float | yes | MyTrac-Companion |
+| from_lat | float | yes | MyTrac-Companion |
+| to_name | string | yes | MyTrac-Companion |
+| to_lon | float | yes | MyTrac-Companion |
+| to_lat | float | yes | MyTrac-Companion |
+| to_address | string | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion | 
+| mode | string | no |  MyTrac-Companion |
+| max_walk_distance | int | no |  MyTrac-Companion |
+| num_itineraries | int | no | MyTrac-Companion |
+| max_transfers | int | no | MyTrac-Companion |
+| request_reply | json | yes | MyTrac-Companion |
+
+
+
 
 
 ### user_evaluates_activity
