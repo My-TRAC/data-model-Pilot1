@@ -66,14 +66,6 @@
         "string"
       ],
       "default": null
-    },
-    {
-      "name": "descriptors",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
     }
   ],
   "connect.name": "agency"
