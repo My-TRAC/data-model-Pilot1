@@ -3,7 +3,7 @@
 
 ## Data Types
 
-| Type name | Description | MY-SQL type |
+| Type name | Description | MY-SQL type (Minimum version 5.7) |
 | --------- | ----------- | ----------- |
 | boolean | A boolean | BIT(1) |
 | int | 32-bit integer | INT |
