@@ -36,10 +36,6 @@
       "type": "float"
     },
     {
-      "name": "descriptors",
-      "type": "string"
-    },
-    {
       "name": "activity_type",
       "type": "int"
     },
