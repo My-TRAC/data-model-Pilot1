@@ -97,7 +97,7 @@
       "name": "request_reply",
       "type": { 
         "type" : "string",
-        "cigo.mysql.datatype" : "json"
+        "cigo.mysql.datatype" : "JSON"
       }
     }
     ],
