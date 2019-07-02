@@ -5,13 +5,13 @@
 
 | Type name | Description | MY-SQL type (Minimum version 5.7) |
 | --------- | ----------- | ----------- |
-| boolean | A boolean | BIT(1) |
+| boolean | A boolean | TINYINT |
 | int | 32-bit integer | INT |
 | long | 64-bit integer | BIGINT |
 | float | 32-bit floating point number | FLOAT |
-| string | variable length string | TINYTEXT |
-| timestamp | string with format YYYY-MM-DD hh:mm:ss | TIMESTAMP |
-| time | string with format "hh:mm:ss" | TIME | 
+| string | variable length string | VARCHAR(256) |
+| timestamp | string with format YYYY-MM-DD hh:mm:ss | TIMESTAMP(3) |
+| time | string with format "hh:mm:ss" | TIME(3) | 
 | date | int with the form YYYYMMDD. Example 20180130 | INT | 
 | enum | int representing an enumeration. Example 0 for bus, 1 for railway, etc. | INT |
 | json | string representing a JSON | JSON |
