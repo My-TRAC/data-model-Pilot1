@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "user",
+  "name": "user_choices_route",
   "fields": [
     {
       "name": "mytrac_id",
