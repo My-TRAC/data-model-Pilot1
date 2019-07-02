@@ -40,10 +40,10 @@ public class SQLQueryBuilder {
             boolean isLogicalType = fieldSchema.getLogicalType() != null;
             if( isLogicalType && fieldSchema.getLogicalType().getName().equals("timestamp-millis"))
             {
-               mysqlType = "TIMESTAMP";
+               mysqlType = "TIMESTAMP(3)";
             } else if(isLogicalType && fieldSchema.getLogicalType().getName().equals("time-millis"))
             {
-                mysqlType = "TIME";
+                mysqlType = "TIME(3)";
             }
             else
             {
@@ -68,11 +68,11 @@ public class SQLQueryBuilder {
         {
             if(fieldName.equals("mytrac_last_modified"))
             {
-                query = query + " DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP";
+                query = query + " DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3)";
             }
             else
             {
-                query = query + " DEFAULT CURRENT_TIMESTAMP";
+                query = query + " DEFAULT CURRENT_TIMESTAMP(3)";
             }
         }
 
@@ -100,6 +100,12 @@ public class SQLQueryBuilder {
         
         switch (type) {
             case "int":
+                String connectType = schema.getProp("connect.type");
+                if ( connectType != null &&
+                       connectType.equals("int8"))
+                {
+                    return "TINYINT";
+                }
                 return "INT";
             case "float":
                 return "FLOAT";
@@ -107,10 +113,8 @@ public class SQLQueryBuilder {
                 return "BIGINT";
             case "double":
                 return "DOUBLE";
-            case "boolean":
-                return "BIT(1)";
             case "string":
-                return "TINYTEXT";
+                return "VARCHAR(256)";
             default:
                 System.out.println("[ERROR] It doesn't exist a mapping type for "+type);
         }
