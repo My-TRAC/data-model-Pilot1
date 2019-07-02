@@ -50,8 +50,7 @@ public class MYSQLInitDataModel {
         @Parameter(names={"-tn","--topic-names"}, description="Topic names", required= true)
         public List<String> topicNames= new ArrayList<>();
         
-        
-        @Parameter(names = "--help,-help", help = true)
+        @Parameter(names = {"-h","--help"}, help = true)
         private boolean help;
         
     }
@@ -90,12 +89,19 @@ public class MYSQLInitDataModel {
     public static void main (String[] args) throws IOException, InterruptedException, SQLException {
         
         Arguments arguments = new Arguments();
-        //Handle the program arguments
-        JCommander  .newBuilder()
-                    .addObject(arguments)
-                    .build()
-                    .parse(args);
         
+        //Handle the program arguments
+        JCommander jct = JCommander.newBuilder()
+                                   .addObject(arguments)
+                                   .build();
+        jct.parse(args);
+        if(arguments.help)
+        {
+            jct.usage();
+            return;
+        }
+
+       
         Map<String, Schema> schemas = loadSchemasMap(arguments.schemaRegistryURL);
         
         //It handles the uploaded file

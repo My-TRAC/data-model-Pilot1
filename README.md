@@ -353,10 +353,8 @@ user_marital_status enum can have the following values:
 | max_walk_distance | int | no |  MyTrac-Companion |
 | num_itineraries | int | no | MyTrac-Companion |
 | max_transfers | int | no | MyTrac-Companion |
+| user_choice | int | yes | MyTrac-Companion |
 | request_reply | json | yes | MyTrac-Companion |
-
-
-
 
 
 ### user_evaluates_activity
