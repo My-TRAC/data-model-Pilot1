@@ -100,6 +100,6 @@
         "cigo.mysql.datatype" : "json"
       }
     }
-    ]
+    ],
     "connect.name": "user_choices_route"
 }
