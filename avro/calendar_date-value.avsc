@@ -8,7 +8,10 @@
     },
     {
       "name": "mytrac_is_valid",
-      "type": "boolean"
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
     },
     {
       "name": "mytrac_last_modified",
