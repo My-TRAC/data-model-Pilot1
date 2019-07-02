@@ -71,7 +71,7 @@
     },
     {
       "name": "mode",
-      "type": ["null","string"],
+      "type": ["null","int"],
       "default" : null
     },
     {
