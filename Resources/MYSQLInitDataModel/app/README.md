@@ -25,3 +25,9 @@ Usage: MYSQLInitDataModel [options]
       MySQL username
   * -h, --help
 ```
+
+Example:
+
+```
+java -cp target/MYSQLInitDataModel-1.0-SNAPSHOT-jar-with-dependencies.jar MYSQLInitDataModel --username <username> --password <password> --database <database> --topic-names agency,activity,user,user_choices_route --schema-registry http://localhost:8081 --mysql "127.0.0.1:3306"
+```
