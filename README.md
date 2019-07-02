@@ -349,12 +349,23 @@ user_marital_status enum can have the following values:
 | to_lat | float | yes | MyTrac-Companion |
 | to_address | string | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion | 
-| mode | string | no |  MyTrac-Companion |
+| mode | enum | no |  MyTrac-Companion |
 | max_walk_distance | int | no |  MyTrac-Companion |
 | num_itineraries | int | no | MyTrac-Companion |
 | max_transfers | int | no | MyTrac-Companion |
 | user_choice | int | yes | MyTrac-Companion |
 | request_reply | json | yes | MyTrac-Companion |
+
+mode can have the following values:
+* 0: airplane
+* 1: bus
+* 2: rail
+* 3: bicycle
+* 4: subway
+* 5: tram
+* 6: car
+* 7: transit
+* 8: walk
 
 
 ### user_evaluates_activity
