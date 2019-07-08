@@ -6,6 +6,12 @@ This tool initializes a MYSQL database given the data model of My-TRAC platform.
 For each given topic, the tool creates the corresponding table with the correct
 data types. 
 
+## Compilation
+
+```
+mvn assembly:assembly
+```
+
 ## Usage
 
 ```
