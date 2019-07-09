@@ -295,7 +295,7 @@ poi_type enum can have the following values:
 | mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | user_registration_date | timestamp | yes | MyTrac-Companion |
-| user_age | int | yes | MyTrac-Companion |
+| user_birthday | date | yes | MyTrac-Companion |
 | user_gender | enum | yes | MyTrac-Companion |
 | user_country | string | yes | MyTrac-Companion |
 | user_nationality | string | yes | MyTrac-Companion |
@@ -331,7 +331,7 @@ user_marital_status enum can have the following values:
 ** User working hours need to be clarified **
 ** User traveller type enum need to be defined **
 
-### user_choices_route
+### user_chooses_route
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |

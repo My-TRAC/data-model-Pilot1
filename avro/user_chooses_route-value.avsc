@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "user_choices_route",
+  "name": "user_chooses_route",
   "fields": [
     {
       "name": "mytrac_id",
@@ -104,5 +104,5 @@
       }
     }
     ],
-    "connect.name": "user_choices_route"
+    "connect.name": "user_chooses_route"
 }
