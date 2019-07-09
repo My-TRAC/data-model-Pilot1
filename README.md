@@ -331,7 +331,7 @@ user_marital_status enum can have the following values:
 ** User working hours need to be clarified **
 ** User traveller type enum need to be defined **
 
-### user_choices_route
+### user_chooses_route
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
