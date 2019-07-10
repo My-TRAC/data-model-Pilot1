@@ -300,11 +300,19 @@ poi_type enum can have the following values:
 | user_gender | enum | yes | MyTrac-Companion |
 | user_country | string | yes | MyTrac-Companion |
 | user_nationality | string | yes | MyTrac-Companion |
-| user_work_status | enum | yes | MyTrac-Companion |
+| user_occupation | enum | yes | MyTrac-Companion |
+| user_reliability | enum | yes | MyTrac-Companion |
+| user_imp_arr | enum | yes | MyTrac-Companion |
+| user_tolerance | enum | yes | MyTrac-Companion |
+| user_income | enum | yes | MyTrac-Companion |
+| user_marital_status | enum | yes | MyTrac-Companion |
 | user_tweets | int | yes | MyTrac-Companion |
-| user_marital_status | int | yes | MyTrac-Companion |
 | user_traveller_type | enum | yes | MyTrac-Companion |
 | user_working_hours | int | yes | MyTrac-Companion |
+| user_household | int | yes | MyTrac-Companion |
+| user_car_avail | boolean | yes | MyTrac-Companion |
+| user_moto_avail | boolean | yes | MyTrac-Companion |
+| user_bike_avail | boolean | yes | MyTrac-Companion |
 | user_interest_work | float | yes | MyTrac-Companion |
 | user_interest_education | float | yes | MyTrac-Companion |
 | user_interest_health | float | yes | MyTrac-Companion |
@@ -321,9 +329,37 @@ user_gender enum can have the following values:
 * 1: female
 * 2: other
 
-user_work_status enum can have the following values:
-* 0: employed 
-* 1: unemployed 
+user_occupation enum can have the following values:
+* 1:Private employee
+* 2:Public servant
+* 3:Self-employed
+* 4:Student
+* 5:Retired
+* 6:Unemployed
+
+user_tolerance enum can have the following values:
+* 1:Not tolerant at all
+* 2:Intolerant
+* 3:Neutral
+* 4:Tolerant
+* 5:Very tolerant
+
+user_reliability enum can have the following values:
+* 1:Not reliable at all
+* 2:Unreliable
+* 3:Neutral
+* 4:Reliable
+* 5:Extremely reliable
+
+user_imp_arr enum can have the following values:
+* 1:Not important at all
+* 2:Somewhat important
+* 3:Very important
+
+user_income enum can have the following values:
+* 1:Low
+* 2:Medium
+* 3:High
 
 user_marital_status enum can have the following values:
 * 0: single

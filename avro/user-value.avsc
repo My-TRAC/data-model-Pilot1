@@ -52,7 +52,19 @@
       "type": "string"
     },
     {
-      "name": "user_work_status",
+      "name": "user_occupation",
+      "type": "int"
+    },
+    {
+      "name": "user_tolerance",
+      "type": "int"
+    },
+    {
+      "name": "user_reliability",
+      "type": "int"
+    },
+    {
+      "name": "user_imp_arr",
       "type": "int"
     },
     {
@@ -64,12 +76,41 @@
       "type": "int"
     },
     {
+      "name": "user_income",
+      "type": "int"
+    },
+    {
+      "name": "user_household",
+      "type": "int"
+    },
+    {
       "name": "user_traveller_type",
       "type": "int"
     },
     {
       "name": "user_working_hours",
       "type": "int"
+    },
+    {
+      "name": "user_car_avail",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "user_moto_avail",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "user_bike_avail",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
     },
     {
       "name": "user_interest_work",
