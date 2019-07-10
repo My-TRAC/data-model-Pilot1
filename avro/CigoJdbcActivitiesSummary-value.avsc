@@ -3,8 +3,17 @@
   "name": "ActivitiesSummary",
   "fields": [
     {
-      "name": "id",
+      "name": "mytrac_id",
       "type": "long"
+    },
+    {
+      "name": "mytrac_last_modified",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
     },
     {
       "name": "num_rated_activities",
