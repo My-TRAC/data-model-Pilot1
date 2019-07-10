@@ -9,6 +9,7 @@
 | int | 32-bit integer | INT |
 | long | 64-bit integer | BIGINT |
 | float | 32-bit floating point number | FLOAT |
+| double | 64-bit floating point number | DOUBLE |
 | string | variable length string | VARCHAR(256) |
 | timestamp | string with format YYYY-MM-DD hh:mm:ss | TIMESTAMP(3) |
 | time | string with format "hh:mm:ss" | TIME(3) | 
@@ -32,8 +33,8 @@ These represent the different items in the My-Trac data model. There is a one-to
 | activity_creation_date | timestamp | yes | MyTrac Activity Crawler | 
 | activity_id | string | yes | crawled |
 | activity_name | string | yes | crawled |
-| activity_lat | string | yes | crawled |
-| activity_lon | float | yes | crawled |
+| activity_lat | double | yes | crawled |
+| activity_lon | double | yes | crawled |
 | activity_type | enum | yes | crawled |
 | activity_start | timestamp | yes | crawled |
 | activity_end | timestamp | yes | crawled |
@@ -105,8 +106,8 @@ activity_type enum can have the following values:
 | mytrac_last_modified | timestamp | yes | operators platform |
 | facility_id | string | yes | My-TRAC |
 | facility_name | string | yes | crawled |
-| facility_lat | string | yes | crawled |
-| facility_lon | float | yes | crawled |
+| facility_lat | double | yes | crawled |
+| facility_lon | double | yes | crawled |
 | facility_type | enum | yes | crawled |
 
 ### feed_info
@@ -146,8 +147,8 @@ activity_type enum can have the following values:
 | mytrac_is_valid | boolean | yes | My-Trac Companion |
 | mytrac_last_modified | timestamp | yes | My-Trac Companion |
 | user_id | string | yes | My-Trac Companion |
-| trace_lat| float | yes | My-Trac Companion |
-| trace_lon | float | yes | My-Trac Companion |
+| trace_lat| double | yes | My-Trac Companion |
+| trace_lon | double | yes | My-Trac Companion |
 | trace_prov | string | yes | My-Trac Companion |
 | trace_time | timestamp | yes | My-Trac Companion |
 | trace_acc | float | no | My-Trac Companion |
@@ -169,8 +170,8 @@ activity_type enum can have the following values:
 | poi_id | string | yes | My-TRAC |
 | poi_type | enum | yes | crawled |
 | poi_name | string | yes | crawled |
-| poi_lat | float | yes | crawled |
-| poi_lon | float | yes | crawled |
+| poi_lat | double | yes | crawled |
+| poi_lon | double | yes | crawled |
 | poi_amenity | string | yes | crawled |
 
 poi_type enum can have the following values:
@@ -211,8 +212,8 @@ poi_type enum can have the following values:
 | mytrac_is_valid | boolean | yes | operators platform |
 | mytrac_last_modified | timestamp | yes | operators platform |
 | shape_id | string | yes | operators platform/gtfs |
-| shape_pt_lat | float | yes | operators platform/gtfs |
-| shape_pt_lon | float | yes | operators platform/gtfs |
+| shape_pt_lat | double | yes | operators platform/gtfs |
+| shape_pt_lon | double | yes | operators platform/gtfs |
 | shape_pt_sequence | int | yes | operators platform/gtfs |
 | shape_pt_sequence | int | yes | operators platform/gtfs |
 | shape_dist_traveled | float | no | operators platform/gtfs |
@@ -246,8 +247,8 @@ poi_type enum can have the following values:
 | stop_code | string | no | operators platform/gtfs |
 | stop_name | string | conditional | operators platform/gtfs |
 | stop_desc | string | no | operators platform/gtfs |
-| stop_lat | float | conditional | operators platform/gtfs |
-| stop_lon | float | conditional | operators platform/gtfs |
+| stop_lat | double | conditional | operators platform/gtfs |
+| stop_lon | double | conditional | operators platform/gtfs |
 | zone_id | string | conditional | operators platform/gtfs |
 | stop_url | string | no | operators platform/gtfs |
 | location_type | enum | no | operators platform/gtfs |
@@ -342,11 +343,11 @@ user_marital_status enum can have the following values:
 | group_id| string | no | MyTrac-Companion |
 | from_name | string | yes | MyTrac-Companion |
 | from_address | string | yes | MyTrac-Companion |
-| from_lon | float | yes | MyTrac-Companion |
-| from_lat | float | yes | MyTrac-Companion |
+| from_lon | double | yes | MyTrac-Companion |
+| from_lat | double | yes | MyTrac-Companion |
 | to_name | string | yes | MyTrac-Companion |
-| to_lon | float | yes | MyTrac-Companion |
-| to_lat | float | yes | MyTrac-Companion |
+| to_lon | double | yes | MyTrac-Companion |
+| to_lat | double | yes | MyTrac-Companion |
 | to_address | string | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion | 
 | mode | enum | no |  MyTrac-Companion |
