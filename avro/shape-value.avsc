@@ -28,11 +28,11 @@
     },
     {
       "name": "shape_pt_lat",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "shape_pt_lon",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "shape_pt_sequence",

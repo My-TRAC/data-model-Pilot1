@@ -54,7 +54,7 @@
       "name": "stop_lat",
       "type": [
         "null",
-        "float"
+        "double"
       ],
       "default": null
     },
@@ -62,7 +62,7 @@
       "name": "stop_lon",
       "type": [
         "null",
-        "float"
+        "double"
       ],
       "default": null
     },

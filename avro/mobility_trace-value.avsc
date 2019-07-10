@@ -28,11 +28,11 @@
     },
     {
       "name": "trace_lat",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "trace_lon",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "trace_prov",

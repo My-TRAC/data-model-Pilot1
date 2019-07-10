@@ -41,11 +41,11 @@
     },
     {
       "name": "from_lon",
-      "type": "string"
+      "type": "double"
     },
     {
       "name": "from_lat",
-      "type": "string"
+      "type": "double"
     },
     {
       "name": "to_name",
@@ -57,11 +57,11 @@
     },
     {
       "name": "to_lon",
-      "type": "string"
+      "type": "double"
     },
     {
       "name": "to_lat",
-      "type": "string"
+      "type": "double"
     },
     {
       "name": "time",

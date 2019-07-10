@@ -36,11 +36,11 @@
     },
     {
       "name": "poi_lat",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "poi_lon",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "poi_amenity",

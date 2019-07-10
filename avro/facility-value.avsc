@@ -46,7 +46,7 @@
       "name": "facility_lat",
       "type": [
         "null",
-        "float"
+        "double"
       ],
       "default": null
     },
@@ -54,7 +54,7 @@
       "name": "facility_lon",
       "type": [
         "null",
-        "float"
+        "double"
       ],
       "default": null
     }

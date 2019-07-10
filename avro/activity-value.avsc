@@ -32,11 +32,11 @@
     },
     {
       "name": "activity_lat",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "activity_lon",
-      "type": "float"
+      "type": "double"
     },
     {
       "name": "activity_type",
