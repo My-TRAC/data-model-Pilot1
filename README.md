@@ -457,9 +457,15 @@ mode can have the following values:
 | mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
 | user_id | string | yes | MyTrac-Companion |
 | choice_id | string | yes | MyTrac-Companion |
-| happiness | float | yes | MyTrac-Companion |
-| confort | float | yes | MyTrac-Companion |
+| happiness | int | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
+
+happiness can have the following values:
+* 1: very unhappy 
+* 2: unhappy
+* 3: neutral 
+* 4: happy
+* 5: very happy
 
 ### user_joins_group
 
