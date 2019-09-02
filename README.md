@@ -428,6 +428,19 @@ mode can have the following values:
 | rating | int | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
 
+### user_evaluates_route
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
+| user_id | string | yes | MyTrac-Companion |
+| choice_id | string | yes | MyTrac-Companion |
+| happiness | float | yes | MyTrac-Companion |
+| confort | float | yes | MyTrac-Companion |
+| time | timestamp | yes | MyTrac-Companion |
+
 ### user_joins_group
 
 | Field Name | Field Type | Required | Source |
