@@ -338,6 +338,10 @@ poi_type enum can have the following values:
 | user_interest_hobby | float | yes | MyTrac-Companion |
 | user_interest_eating | float | yes | MyTrac-Companion |
 | user_interest_shopping | float | yes | MyTrac-Companion |
+| user_comfort_pt | float | yes | MyTrac-Companion |
+| user_comfort_car | float | yes | MyTrac-Companion |
+| user_comfort_bike | float | yes | MyTrac-Companion |
+| user_comfort_moto | float | yes | MyTrac-Companion |
 
 
 user_gender enum can have the following values:

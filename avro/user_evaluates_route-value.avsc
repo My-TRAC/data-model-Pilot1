@@ -35,10 +35,6 @@
       "type": "float"
     },
     {
-      "name": "confort",
-      "type": "float"
-    },
-    {
       "name": "time",
       "type": {
           "type":"long",

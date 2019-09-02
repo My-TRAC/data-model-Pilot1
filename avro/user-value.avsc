@@ -147,6 +147,22 @@
     {
       "name": "user_interest_shopping",
       "type": "float"
+    },
+    {
+      "name": "user_comfort_pt",
+      "type": "float"
+    },
+    {
+      "name": "user_comfort_car",
+      "type": "float"
+    },
+    {
+      "name": "user_comfort_bike",
+      "type": "float"
+    },
+    {
+      "name": "user_comfort_moto",
+      "type": "float"
     }
   ],
   "connect.name": "user"
