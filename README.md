@@ -378,6 +378,8 @@ user_traveller_type enum can have teh following values:
 | mytrac_id | long | yes | MyTrac-Companion  |
 | mytrac_is_valid | boolean | yes | MyTrac-Companion  |
 | mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
+| choice_id | string | yes | MyTrac-Companion |
+| next_id | string | yes | MyTrac-Companion |
 | user_id | string | yes | MyTrac-Companion |
 | group_id| string | no | MyTrac-Companion |
 | from_name | string | yes | MyTrac-Companion |
@@ -395,6 +397,12 @@ user_traveller_type enum can have teh following values:
 | max_transfers | int | no | MyTrac-Companion |
 | user_choice | int | yes | MyTrac-Companion |
 | request_reply | json | yes | MyTrac-Companion |
+
+choice_id is the unique identifier of this choice, which can be used to reference this choice from other items
+
+next_id is the id of another choice in the same  "choice" session. This is to represent cases where the user is presented with choices from multiple OTP queries. 
+
+To represent a user ignoring all the results returned for a request_reply, user_choice must be -1. 
 
 mode can have the following values:
 * 0: airplane
