@@ -32,7 +32,7 @@
     },
     {
       "name": "happiness",
-      "type": "float"
+      "type": "int"
     },
     {
       "name": "time",
