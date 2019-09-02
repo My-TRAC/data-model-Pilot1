@@ -159,20 +159,7 @@ activity_type enum can have the following values:
 | trace_speed_acc | float | no | My-Trac Companion |
 | trace_vert_acc | float | no | My-Trac Companion |
 
-### model_recommendation
 
-| Field Name | Field Type | Required | Source |
-| ---------- | ---------- | -------- | ------ |
-| mytrac_id | long | yes | My-Trac Companion |
-| mytrac_is_valid | boolean | yes | My-Trac Companion |
-| mytrac_last_modified | timestamp | yes | My-Trac Companion |
-| user_id | string | yes | My-Trac Companion |
-| tod_earlier | float | yes | Time of Departure Model |
-| tod_ontime | float | yes | Time of Departure Model |
-| tod_later | float | yes | Time of Departure Model |
-| mod_car | float | yes | Mode Choice Model |
-| mod_pt | float | yes | Mode Choice Model |
-| mod_motbike | float | yes | Mode Choice Model |
 
 ### poi
 
@@ -217,6 +204,21 @@ poi_type enum can have the following values:
 | route_color | string | no | operators platform/gtfs |
 | route_text_color | string | no | operators platform/gtfs |
 | route_sort_order | string | no | operators platform/gtfs |
+
+### route_choice_model_recommendation
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | My-Trac Companion |
+| mytrac_is_valid | boolean | yes | My-Trac Companion |
+| mytrac_last_modified | timestamp | yes | My-Trac Companion |
+| choice_id | string | yes | My-Trac Companion |
+| tod_earlier | float | yes | Time of Departure Model |
+| tod_ontime | float | yes | Time of Departure Model |
+| tod_later | float | yes | Time of Departure Model |
+| mod_car | float | yes | Mode Choice Model |
+| mod_pt | float | yes | Mode Choice Model |
+| mod_motbike | float | yes | Mode Choice Model |
 
 ### shape
 
