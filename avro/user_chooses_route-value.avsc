@@ -23,6 +23,14 @@
         }
     },
     {
+      "name": "choice_id",
+      "type": "string"
+    },
+    {
+      "name": "next_id",
+      "type": "string"
+    },
+    {
       "name": "user_id",
       "type": "string"
     },
