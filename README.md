@@ -205,7 +205,7 @@ poi_type enum can have the following values:
 | route_text_color | string | no | operators platform/gtfs |
 | route_sort_order | string | no | operators platform/gtfs |
 
-### route_choice_model_recommendation
+### route_choice_model_output
 
 | Field Name | Field Type | Required | Source |
 | ---------- | ---------- | -------- | ------ |
