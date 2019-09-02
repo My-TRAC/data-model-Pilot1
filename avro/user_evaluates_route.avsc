@@ -1,0 +1,52 @@
+{
+  "type": "record",
+  "name": "user_evaluates_activity",
+  "fields": [
+    {
+      "name": "mytrac_id",
+      "type": "long"
+    },
+    {
+      "name": "mytrac_is_valid",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "mytrac_last_modified",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "choice_id",
+      "type": "string"
+    },
+    {
+      "name": "happiness",
+      "type": "float"
+    },
+    {
+      "name": "confort",
+      "type": "float"
+    },
+    {
+      "name": "time",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
+    }
+  ],
+  "connect.name": "user_evaluates_activity"
+}
