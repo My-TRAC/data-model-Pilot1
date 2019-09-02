@@ -365,8 +365,11 @@ user_marital_status enum can have the following values:
 * 0: single
 * 1: married
 
+user_traveller_type enum can have teh following values:
+* 0: Work / Education
+* 1: Othe
+
 ** User working hours need to be clarified **
-** User traveller type enum need to be defined **
 
 ### user_chooses_route
 
