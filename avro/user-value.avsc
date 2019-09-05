@@ -163,6 +163,18 @@
     {
       "name": "user_comfort_moto",
       "type": "float"
+    },
+    {
+      "name": "user_often_car",
+      "type": "int"
+    },
+    {
+      "name": "user_often_pt",
+      "type": "int"
+    },
+    {
+      "name": "user_arrive_ontime",
+      "type": "int"
     }
   ],
   "connect.name": "user"

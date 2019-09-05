@@ -342,6 +342,9 @@ poi_type enum can have the following values:
 | user_comfort_car | float | yes | MyTrac-Companion |
 | user_comfort_bike | float | yes | MyTrac-Companion |
 | user_comfort_moto | float | yes | MyTrac-Companion |
+| user_often_car | enum | yes | MyTrac-Companion |
+| user_often_pt | enum | yes | MyTrac-Companion |
+| user_arrive_ontime | enum | yes | MyTrac-Companion |
 
 
 user_gender enum can have the following values:
@@ -385,9 +388,26 @@ user_marital_status enum can have the following values:
 * 0: single
 * 1: married
 
-user_traveller_type enum can have teh following values:
+user_traveller_type enum can have the following values:
 * 0: Work / Education
 * 1: Other
+
+user_often_car enum can have the following values:
+* 1: Never
+* 2: Rarely
+* 3: One/Two Times per week
+* 4: Daily
+
+user_often_pt enum can have the following values:
+* 1: Never
+* 2: Rarely
+* 3: One/Two Times per week
+* 4: Daily
+
+user_arrive_ontime enum can have the following values:
+* 1: Not important at all 
+* 2: Somewhat important 
+* 3: Very important 
 
 ** User working hours need to be clarified **
 
