@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "user_evaluates_activity",
+  "name": "route_choice_model_output",
   "fields": [
     {
       "name": "mytrac_id",
@@ -60,5 +60,5 @@
         }
     }
   ],
-  "connect.name": "user_evaluates_activity"
+  "connect.name": "route_choice_model_output"
 }

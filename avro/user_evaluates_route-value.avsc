@@ -1,6 +1,6 @@
 {
   "type": "record",
-  "name": "user_evaluates_activity",
+  "name": "user_evaluates_route",
   "fields": [
     {
       "name": "mytrac_id",
@@ -44,5 +44,5 @@
         }
     }
   ],
-  "connect.name": "user_evaluates_activity"
+  "connect.name": "user_evaluates_route"
 }
