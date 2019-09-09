@@ -350,7 +350,6 @@ poi_type enum can have the following values:
 user_gender enum can have the following values:
 * 0: male
 * 1: female
-* 2: other
 
 user_occupation enum can have the following values:
 * 1:Private employee
@@ -445,15 +444,9 @@ next_id is the id of another choice in the same  "choice" session. This is to re
 To represent a user ignoring all the results returned for a request_reply, user_choice must be -1. 
 
 mode can have the following values:
-* 0: airplane
-* 1: bus
-* 2: rail
-* 3: bicycle
-* 4: subway
-* 5: tram
-* 6: car
-* 7: transit
-* 8: walk
+* 1: car
+* 2: pt
+* 3: bike/moto
 
 
 ### user_evaluates_activity
