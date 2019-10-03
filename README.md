@@ -502,6 +502,22 @@ happiness can have the following values:
 | tickets_purchased | int | yes | MyTrac-Companion |
 | time | timestamp | yes | MyTrac-Companion |
 
+### user_reward
+
+| Field Name | Field Type | Required | Source |
+| ---------- | ---------- | -------- | ------ |
+| mytrac_id | long | yes | MyTrac-Companion  |
+| mytrac_is_valid | boolean | yes | MyTrac-Companion  |
+| mytrac_last_modified | timestamp | yes | MyTrac-Companion  |
+| user_id | string | yes | MyTrac-Companion |
+| is_login | boolean | yes | MyTrac-Companion |
+| is_trip | boolean | yes | MyTrac-Companion |
+| is_place | boolean | yes | MyTrac-Companion |
+| is_show_poi | boolean | yes | MyTrac-Companion |
+| is_rating_poi | boolean | yes | MyTrac-Companion |
+| is_signup | boolean | yes | MyTrac-Companion |
+| last_reward_done | timestamp | yes | MyTrac-Companion |
+
 ### user_uses_app
 
 | Field Name | Field Type | Required | Source |

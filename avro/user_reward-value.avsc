@@ -1,0 +1,82 @@
+{
+  "type": "record",
+  "name": "user_reward",
+  "fields": [
+    {
+      "name": "mytrac_id",
+      "type": "long"
+    },
+    {
+      "name": "mytrac_is_valid",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "mytrac_last_modified",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "is_login",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "is_trip",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "is_place",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "is_show_poi",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "is_rating_poi",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "is_signup",
+      "type": { 
+        "type" : "int",
+        "connect.type" : "int8"
+      }
+    },
+    {
+      "name": "last_reward_done",
+      "type": {
+          "type":"long",
+          "connect.version":1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",  
+          "logicalType": "timestamp-millis"
+        }
+    }
+  ],
+  "connect.name": "user_reward"
+}
